@@ -1,0 +1,46 @@
+@import './src/common/styles/sass/variables';
+@import './src/common/styles/sass/mixins';
+
+.footerBlock {
+  color: $textColor;
+  background-color: #323232;
+  height: 20vh;
+  border-top: 1px solid #505050;
+  border-bottom: 5px solid #505050;
+
+  .footer {
+    @include flex($direction: column, $justify: space-around);
+    height: 100%;
+
+    .links {
+      @include flex($justify: space-between, $align: center);
+
+      a {
+        @include text($fontSize: 2em, $lineHeight: 30px, $color: $bgSecondColor);
+        background-color: #323232;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 10px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+    }
+
+    .backToTop {
+      width: 30px;
+      height: 30px;
+      color: $textColor;
+      background: #505050;
+      text-decoration: none;
+      outline: none;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+

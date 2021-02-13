@@ -1,0 +1,31 @@
+@import './common/styles/sass/variables';
+@import './common/styles/sass/mixins';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  body {
+    @include text($fontFamily: ('Open Sans', sans-serif), $fontSize: 13px, $lineHeight: 2, $color: #333);
+    background: $bgColor;
+
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.2;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    h3 {
+      letter-spacing: 2px;
+      font-size: 1.5em;
+    }
+  }
+}
+
+
+
+
+

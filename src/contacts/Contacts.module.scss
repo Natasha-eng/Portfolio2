@@ -1,0 +1,46 @@
+@import './src/common/styles/sass/variables';
+@import './src/common/styles/sass/mixins';
+
+.contactsBlock {
+  background-color: $bgColor;
+  min-height: 70vh;
+
+  .contacts {
+    @include flex($direction: column, $justify: space-around);
+    padding: 60px 15px 60px 15px;
+
+    .form {
+      @include flex($direction: column, $align: center);
+      width: 70%;
+
+      input, textarea, label {
+        width: 100%;
+        margin-bottom: 5px;
+        color: $textColor;
+      }
+
+      label {
+        font-weight: 700;
+      }
+
+      input {
+        height: 45px;
+        border: 1px solid $borderColor;
+      }
+
+      .contactButton {
+        @include text($fontSize: 12px, $fontWeight: 700, $color: $bgSecondColor, $letterSpace:1px);
+        padding: 11px;
+        background-color: #323232;
+        text-transform: uppercase;
+        min-width: 151px;
+      }
+
+    }
+
+    @media screen and (max-width: 830px) {
+      width: 100%;
+    }
+  }
+}
+

@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './App.scss';
+import Header from "./header/Header";
+import Main from "./main/Main";
+import Skills from "./skills/Skills";
+import Projects from "./projects/Projects";
+import HireBlock from "./hireBlock/HireBlock";
+import Contacts from "./contacts/Contacts";
+import Footer from "./footer/Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <Main/>
+            <Skills/>
+            <Projects/>
+            <HireBlock title={"Considering remote work options"}/>
+            <Contacts/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

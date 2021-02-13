@@ -1,0 +1,22 @@
+@import './src/common/styles/sass/mixins';
+
+.nav {
+  width: 370px;
+  @include flex($justify: space-between);
+  padding: 8px 15px;
+
+  a {
+    @include text($fontFamily: ('Open Sans', sans-serif),$fontSize: 1.2em,$fontWeight: 700, $color: $textColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+
+  a + a::before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+  }
+}
+
+

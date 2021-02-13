@@ -1,0 +1,104 @@
+@import './src/common/styles/sass/variables';
+@import './src/common/styles/sass/mixins';
+
+.shapeBottom {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+
+  .secondaryBg {
+    background-color: $bgSecondColor;
+  }
+
+  .blockTitle {
+    border-top: 1px solid #bebdbd;
+    border-bottom: 1px solid #bebdbd;
+    padding: 40px 0;
+    z-index: 3;
+    position: relative;
+    text-align: center;
+
+    .title {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+
+      h2 {
+        @include text(('Josefin Sans', sans-serif), 2em, 700, 1.2, $primaryColor, 2.5px);
+        text-transform: uppercase;
+        margin: 0;
+        text-align: center;
+      }
+
+      .titleIcon {
+        display: inline-block;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 1px;
+          width: 20px;
+          left: -30px;
+          top: 50%;
+          background: #323232;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          width: 20px;
+          right: -30px;
+          top: 50%;
+          background: #323232;
+        }
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background: $bgSecondColor;
+      bottom: -1px;
+      left: 50%;
+      margin-left: -12px;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: $bgSecondColor;
+    border: 1px solid $borderColor;
+    z-index: 1;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

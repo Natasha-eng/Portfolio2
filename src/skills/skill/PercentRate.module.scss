@@ -1,0 +1,19 @@
+@import './src/common/styles/sass/variables';
+@import './src/common/styles/sass/mixins';
+
+.rateContainer {
+  @include flex(column, $align:center);
+  border: 1px solid $borderColor;
+  padding: 50px;
+  width: 33.33%;
+
+  span {
+    position: absolute;
+    line-height: 110px;
+  }
+
+  .rate {
+    width: 110px;
+    height: 110px;
+  }
+}

@@ -1,0 +1,12 @@
+@import './sass/mixins';
+
+.container {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  @include flex($justify: space-between, $align: center, $wrap: wrap);
+}
+
+.blockPage {
+  padding: 60px 0;
+}
