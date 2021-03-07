@@ -2,11 +2,10 @@
 @import './src/common/styles/sass/mixins';
 
 .mainBlock {
-  height: 100vh;
+  min-height: 70vh;
   background-color: $bgColor;
 
   .main {
-
     .greeting {
       text-transform: uppercase;
       margin-top: 100px;
@@ -51,11 +50,13 @@
     }
 
     .photo {
-      width: 45%;
-      height: 70%;
+      width: 350px;
+      height: 350px;
+      margin-top: 100px;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      align-self: center;
     }
 
     @media screen and (max-width: 1189px) {
