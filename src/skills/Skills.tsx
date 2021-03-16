@@ -11,7 +11,7 @@ import {faReact} from "@fortawesome/free-brands-svg-icons/faReact";
 
 function Skills() {
     return (
-        <div className={style.skillsBlock}>
+        <div className={style.skillsBlock} id="skills">
             <Title name={'Skills'} icon={faKeyboard}/>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <div className={style.skills}>

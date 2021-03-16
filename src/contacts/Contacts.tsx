@@ -7,7 +7,7 @@ import {faSignature} from "@fortawesome/free-solid-svg-icons/faSignature";
 
 function Contacts() {
     return (
-        <div className={style.contactsBlock}>
+        <div className={style.contactsBlock} id="contacts">
             <Title name={'Contacts'} icon = {faSignature}/>
             <div className={`${styleContainer.container} ${style.contacts}`}>
                 <form className={style.form} action="#">

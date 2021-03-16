@@ -29,7 +29,7 @@ function Projects() {
     };
 
     return (
-        <div className={style.projectsBlock}>
+        <div className={style.projectsBlock} id="projects">
             <Title name={'Projects'} icon={faInbox}/>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <div className={style.projects}>
