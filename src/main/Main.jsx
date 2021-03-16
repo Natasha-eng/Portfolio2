@@ -23,7 +23,6 @@ function Main() {
                     </div>
                 </Fade>
                 <div className={style.photo} style={photo}></div>
-
             </div>
         </div>
     );
