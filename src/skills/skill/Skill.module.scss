@@ -12,6 +12,7 @@
   transition: 1s;
   &:hover{
     background-color: $borderColor;
+    transform: scale(0.95,0.95);
   }
 
   .icon {
