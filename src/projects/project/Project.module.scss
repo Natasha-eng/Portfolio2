@@ -36,7 +36,8 @@
       @include text($fontSize: 1.2em, $fontWeight: 700, $color: $bgSecondColor, $letterSpace: 1px);
       padding: 5px;
       text-transform: uppercase;
-      min-width: 130px;
+      min-width: 100px;
+      margin-right: 5px;
       text-align: center;
       cursor: pointer;
       position: relative;

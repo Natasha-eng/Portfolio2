@@ -7,13 +7,16 @@ type ProjectPropsType = {
     }
     projectName: string
     description: string
+    demo: string
+    repo: string
 }
 
 function Project(props: ProjectPropsType) {
     return (
         <div className={style.project}>
                 <div className={style.imageContainer} style={props.style}>
-                    <a href="#" className={style.button}>Look</a>
+                    <a href={props.demo} className={style.button} target="_blank">DEMO</a>
+                    <a href={props.repo} className={style.button} target="_blank">REPO</a>
                 </div>
                 <div className={style.projectContent}>
                     <h3 className={style.projectTitle}>{props.projectName}</h3>
