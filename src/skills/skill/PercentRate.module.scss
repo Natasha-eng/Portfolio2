@@ -2,10 +2,15 @@
 @import './src/common/styles/sass/mixins';
 
 .rateContainer {
-  @include flex(column, $align:center);
+  @include flex(column, $align: center);
   border: 1px solid $borderColor;
   padding: 50px;
   width: 33.33%;
+  transition: 1s;
+
+  &:hover {
+    background-color: $borderColor;
+  }
 
   span {
     position: absolute;

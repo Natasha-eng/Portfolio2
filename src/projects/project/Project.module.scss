@@ -8,6 +8,12 @@
   background-color: $bgSecondColor;
   padding: 5px;
   border: 1px solid $borderColor;
+  transition: 1s;
+
+  &:hover {
+    background-color: $borderColor;
+    transform: scale(0.95,0.95);
+  }
 
   .imageContainer {
     @include flex($justify: center, $align: center);
@@ -42,6 +48,12 @@
       cursor: pointer;
       position: relative;
       z-index: 1;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: #000000;
+        padding: 7px;
+      }
     }
   }
 

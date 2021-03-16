@@ -6,10 +6,14 @@
   padding: 8px 15px;
 
   a {
-    @include text($fontFamily: ('Open Sans', sans-serif),$fontSize: 1.2em,$fontWeight: 700, $color: $textColor);
+    @include text($fontFamily: ('Open Sans', sans-serif), $fontSize: 1.2em, $fontWeight: 700, $color: $textColor);
     text-decoration: none;
     text-transform: uppercase;
     padding: 5px;
+
+    &:hover {
+      color: #323232;
+    }
   }
 
   a + a::before {

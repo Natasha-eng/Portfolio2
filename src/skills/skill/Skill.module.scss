@@ -9,6 +9,10 @@
   padding: 20px;
   box-sizing: border-box;
   border: 1px solid $borderColor;
+  transition: 1s;
+  &:hover{
+    background-color: $borderColor;
+  }
 
   .icon {
     width: 60px;
