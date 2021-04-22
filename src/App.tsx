@@ -15,8 +15,8 @@ function App() {
             <Main/>
             <Skills/>
             <Projects/>
-           {/* <HireBlock title={"Considering remote work options"}/>
-            <Contacts/>*/}
+           {/* <HireBlock title={"Considering remote work options"}/>*/}
+            <Contacts/>
             <Footer/>
         </div>
     );
