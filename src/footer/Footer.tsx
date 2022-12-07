@@ -16,8 +16,6 @@ function Footer() {
             <div className={`${styleContainer.container} ${style.footer}`}>
                 <h2 className={style.title}>Shilova Natallia</h2>
                 <div className={style.links}>
-                    <a href="https://www.facebook.com/profile.php?id=100005373900255" target="_blank"><i><FontAwesomeIcon
-                        icon={faFacebookSquare}/></i></a>
                     <a href="https://github.com/Natasha-eng" target="_blank"><i><FontAwesomeIcon icon={faGithubSquare} /></i></a>
                     <a href="https://linkedin.com/in/natasha-shilova" target="_blank"><i><FontAwesomeIcon icon={faLinkedin} /></i></a>
                     <a href="https://t.me/NataShilova" target="_blank"><i><FontAwesomeIcon icon={faTelegram} /></i></a>
